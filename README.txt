@@ -1,29 +1,17 @@
-PPC Quotes — iPhone web app (version 1.0)
+JF PERFORMANCE V3 — iPhone / GitHub Pages
 
-Files: index.html, app.js, icon.png, manifest.webmanifest, sw.js
+UPLOAD / UPDATE
+Upload the CONTENTS of this folder to github.com/yauheniya-web/ppc-quotes in the repository ROOT. Commit changes. GitHub Pages: main / root. Refresh Safari; if the installed app shows the older version, close and reopen it after deployment.
 
-QUICK START ON COMPUTER
-Open index.html in a desktop browser. Saving quotes uses local browser storage.
+BACKUP POLICY
+- Data saved instantly in this device browser's localStorage when calculations are edited/saved. This is not cloud sync.
+- Backup reminder every 7 days since last successful export/share. Reminder only appears when the app is open; there are no push notifications or automatic scheduled uploads.
+- Tap 'Create backup'. On supported iOS choose 'Save to Files' > 'iCloud Drive' in the Share sheet. Otherwise downloaded JSON must be moved to iCloud Drive manually.
+- Copy includes saved clients, documents, current draft, app sender/contact settings and complete service descriptions/state needed to regenerate PDF.
+- For a new iPhone: install/open the same GitHub Pages app, tap 'Restore JSON', choose the JSON in Files/iCloud Drive, review the counts and confirm. The restore REPLACES data on the new device; export that device's existing data first.
+- Previous JSON format 'ppc-quotes-v1' is supported; those exports did not include the unsaved draft.
+- Do not treat the backup reminder as confirmation of iCloud upload: confirm the file is present in Files and accessible.
+- iOS Safari and an Add to Home Screen PWA may have separate storage: restore the JSON inside the version you actually use. Losing browser data, clearing website data, switching phone or changing the app URL can lose local records without an external backup.
+- JSON backup contains potentially sensitive customer names/contacts; keep it private in your own Files/iCloud Drive.
 
-INSTALL ON IPHONE AS AN APP
-1. Publish the COMPLETE folder to an HTTPS static host (GitHub Pages, Netlify, Cloudflare Pages).
-2. Open the HTTPS address with Safari on iPhone.
-3. Tap Share -> Add to Home Screen -> Add.
-4. Open PPC Quotes from the icon on the home screen.
-
-The application is a PWA. Once installed and opened online, the service worker caches it for offline use (except a first launch, which needs network access). No App Store account is required. A local downloaded HTML file is NOT equivalent to installing a PWA from an HTTPS site.
-
-PDF ON IPHONE
-Tap Create PDF. The Safari/iOS native print interface will open; use Share / Save to Files from its preview. In desktop browsers choose "Save as PDF" in print destination. PDF contains only the finalized client prices and descriptions, not discount information.
-
-BACKUPS
-Quotes remain on the device/browser in localStorage; they are not synced across devices. Periodically use "Export JSON backup". To move to another device, import this JSON backup.
-
-PRICING
-All prices are a user-editable business proposal concept based on the requested starting rate card, not a regulated market tariff. E3 and budgets above EUR 15k need custom quoting. The % fee formula uses the actual Google Ads monthly budget entered as an estimate; final contract should use agreed definition of actual spend. Currency EUR. Any applicable VAT, taxes and agency fees are not included.
-
-DATA PRIVACY
-No server or cloud storage is implemented. Browser data can be removed by clearing site data; keep backups. The proposal includes only client name, any entered contact, supplier details, service lines, terms and final prices.
-
-LIMITATIONS IN V1
-PDF is generated with iOS native Print -> Save to Files, not a dedicated single-click PDF-download engine. Discount is applied to a chosen scope (one-off, monthly, or first period only). First-period-only adjustments do not apply to later renewals; the PDF reflects the initial-period agreed price, so future-period pricing terms should be explicitly clarified before contracting.
+Invoice / Fattura remains draft only, without legally required tax fields or SdI delivery.
